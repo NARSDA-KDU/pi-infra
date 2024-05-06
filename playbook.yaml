@@ -1,0 +1,9 @@
+---
+- name: Deploy to Vader
+  hosts: rpi 
+  gather_facts: true
+  vars_files:
+    - "vars/main.yml"
+
+  roles:
+    - role: setup
